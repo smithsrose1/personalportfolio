@@ -1,0 +1,12 @@
+body {
+    font-family: sans-serif;
+    text-align: center;
+    padding-top: 50px;
+}
+
+#message {
+    /* Initially hide the message */
+    display: none; 
+    color: green;
+    font-weight: bold;
+}
