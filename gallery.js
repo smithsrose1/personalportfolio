@@ -14,59 +14,111 @@ audio.volume = 0.5;
 const artworks = [
     {
         id: 1,
-        title: "Starry Night",
-        artist: "Vincent van Gogh",
-        description: "A swirling night sky over a village, painted during Van Gogh's stay at the Saint-Paul-de-Mausole asylum in 1889.",
-        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg/1280px-Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg"
+        title: "Steve and Kira",
+        artist: "Smita Rosemary",
+        description: "A portrait of my brother Steve and his wife Kira.",
+        size: "16' x 20', acrylic on canvas panel",
+        image: "assets/artwork1.jpeg"
     },
     {
         id: 2,
-        title: "The Great Wave",
-        artist: "Katsushika Hokusai",
-        description: "An iconic woodblock print depicting a towering wave threatening boats off the coast of Kanagawa.",
-        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Tsunami_by_hokusai_19th_century.jpg/1280px-Tsunami_by_hokusai_19th_century.jpg"
+        title: "Elana",
+        artist: "Smita Rosemary",
+        description: "First commission. Special thanks to my SIL's mom <3. Happy Birthday Elana.",
+        size: "20' x 24', acrylic on canvas",
+        image: "assets/artwork2.jpeg"
     },
     {
         id: 3,
-        title: "Girl with a Pearl Earring",
-        artist: "Johannes Vermeer",
-        description: "Often called the 'Mona Lisa of the North,' this masterpiece captures a girl in an exotic dress with a large pearl earring.",
-        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/1665_Girl_with_a_Pearl_Earring.jpg/800px-1665_Girl_with_a_Pearl_Earring.jpg"
+        title: "In the Smoke",
+        artist: "Smita Rosemary",
+        description: "Caught up in the smoke.",
+        size: "8' x 10', prismacolor on paper",
+        image: "assets/art3.jpeg"
     },
     {
         id: 4,
-        title: "The Persistence of Memory",
-        artist: "Salvador Dalí",
-        description: "Melting clocks in a dreamscape, this surrealist masterpiece explores the fluid nature of time and memory.",
-        image: "https://upload.wikimedia.org/wikipedia/en/d/dd/The_Persistence_of_Memory.jpg"
+        title: "Dream",
+        artist: "Smita Rosemary",
+        description: "In this dreamscape, this piece explores a colorful state only found in dreams.",
+        size: "16' x 20', acrylic on canvas panel",
+        image: "assets/art4.jpeg"
     },
     {
         id: 5,
-        title: "Water Lilies",
-        artist: "Claude Monet",
-        description: "Part of a series of approximately 250 oil paintings depicting Monet's flower garden at Giverny.",
-        image: "https://upload.wikimedia.org/wikipedia/commons/a/aa/Claude_Monet_-_Water_Lilies_-_1906%2C_Ryerson.jpg"
+        title: "Stew",
+        artist: "Smita Rosemary",
+        description: "Part of a series of portraits of my brother, Steve. His nickname is Chicken Stew.",
+        size: "5' x 5', prismacolor on paper",
+        image: "assets/art5.jpeg"
     },
     {
         id: 6,
-        title: "The Birth of Venus",
-        artist: "Sandro Botticelli",
-        description: "A Renaissance masterpiece depicting the goddess Venus emerging from the sea as a fully grown woman.",
-        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Sandro_Botticelli_-_La_nascita_di_Venere_-_Google_Art_Project_-_edited.jpg/1280px-Sandro_Botticelli_-_La_nascita_di_Venere_-_Google_Art_Project_-_edited.jpg"
+        title: "Koi Pond",
+        artist: "Smita Rosemary",
+        description: "Koi with water lilies..",
+        size: "10' x 12', acrylic on wood panel",
+        image: "assets/art7.jpeg"
     },
     {
         id: 7,
-        title: "The Scream",
-        artist: "Edvard Munch",
-        description: "An expressionist icon showing an agonized figure against a tumultuous orange sky.",
-        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Edvard_Munch%2C_1893%2C_The_Scream%2C_oil%2C_tempera_and_pastel_on_cardboard%2C_91_x_73_cm%2C_National_Gallery_of_Norway.jpg/800px-Edvard_Munch%2C_1893%2C_The_Scream%2C_oil%2C_tempera_and_pastel_on_cardboard%2C_91_x_73_cm%2C_National_Gallery_of_Norway.jpg"
+        title: "Burnt Out",
+        artist: "Smita Rosemary",
+        description: "A self portrait during the days of covid-19.",
+        size: "16' x 20', acrylic on wood panel",
+        image: "assets/art8.jpeg"
     },
     {
         id: 8,
-        title: "American Gothic",
-        artist: "Grant Wood",
-        description: "A portrait of a farmer and his daughter standing before their house with a Gothic window.",
-        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Grant_Wood_-_American_Gothic_-_Google_Art_Project.jpg/800px-Grant_Wood_-_American_Gothic_-_Google_Art_Project.jpg"
+        title: "Sushi and Friends",
+        artist: "Smita Rosemary",
+        description: "The last hang out with friends before the pandemic lockdowns.",
+        size: "10' x 12', watercolor on paper",
+        image: "assets/art9.jpeg"
+    }
+    ,
+    {
+        id: 9,
+        title: "Cradled",
+        artist: "Smita Rosemary",
+        description: "Mothers swaddling their children with whatever they can.",
+        size: "12' x 16', acrylic on wood panel",
+        image: "assets/art10.jpeg"
+    }
+    ,
+    {
+        id: 10,
+        title: "Another Chicken",
+        artist: "Smita Rosemary",
+        description: "Part two of the series.",
+        size: "5' x 5', prismacolor on paper",
+        image: "assets/art6.jpeg"
+    },
+    {
+        id: 11,
+        title: "Devotion",
+        artist: "Smita Rosemary",
+        description: "A portrait of a woman with one devotion.",
+        size: "16' x 20', acrylic on canvas panel",
+        image: "assets/art11.jpeg"
+    }
+    ,
+    {
+        id: 12,
+        title: "Faceless Mothers",
+        artist: "Smita Rosemary",
+        description: "A mother and her child, faceless due to the loss of identity in motherhood.",
+        size: "20' x 24', acrylic on canvas",
+        image: "assets/art12.jpeg"
+    }
+    ,
+    {
+        id: 13,
+        title: "Self Portrait - 8th Grade",
+        artist: "Smita Rosemary",
+        description: "A self portrait from 8th grade.",
+        size: "10' x 18', prismacolor on paper",
+        image: "assets/art13.jpeg"
     }
 ];
 
@@ -78,6 +130,7 @@ const modalImage = document.getElementById('modal-image');
 const modalTitle = document.getElementById('modal-title');
 const modalArtist = document.getElementById('modal-artist');
 const modalDescription = document.getElementById('modal-description');
+const modalSize = document.getElementById('modal-size');
 const infoTitle = document.getElementById('current-title');
 const infoArtist = document.getElementById('current-artist');
 const infoDisplay = document.querySelector('.info-display');
@@ -115,7 +168,10 @@ volumeSlider.addEventListener('input', () => {
 });
 
 // ========== BUILD CAROUSEL ==========
-const ITEM_WIDTH = 220;
+const GAP = 40; // Gap between items from CSS
+const IMAGE_WIDTH = 180; // Width of artwork image
+const FRAME_PADDING = 28; // Frame padding (14px * 2)
+const ITEM_WIDTH = IMAGE_WIDTH + FRAME_PADDING + GAP; // Total width including gap
 const totalWidth = artworks.length * ITEM_WIDTH;
 const tripleArtworks = [...artworks, ...artworks, ...artworks];
 const artworkElements = [];
@@ -136,7 +192,7 @@ tripleArtworks.forEach((art, index) => {
 });
 
 // ========== CAROUSEL ANIMATION ==========
-let offset = 0;
+let offset = totalWidth; // Start at the middle set of artworks
 let isPaused = false;
 let animationId;
 let lastTime = 0;
@@ -190,12 +246,15 @@ function animate(currentTime) {
     
     offset += (speed * delta) / 1000;
     
-    if (offset >= totalWidth) {
+    // Seamless infinite loop - reset when we've scrolled through one complete set
+    if (offset >= totalWidth * 2) {
         offset -= totalWidth;
+    } else if (offset < totalWidth) {
+        offset += totalWidth;
     }
     
     // Center the carousel properly
-    const centerOffset = getViewportCenter() - 90; // Half of artwork width (180/2)
+    const centerOffset = getViewportCenter() - (IMAGE_WIDTH + FRAME_PADDING) / 2;
     track.style.transform = `translateX(${-offset + centerOffset}px)`;
     updateHighlights();
     
@@ -223,6 +282,7 @@ function openModal(art) {
     modalTitle.textContent = art.title;
     modalArtist.textContent = art.artist;
     modalDescription.textContent = art.description;
+    modalSize.textContent = art.size;
     
     modal.classList.add('active');
 }
