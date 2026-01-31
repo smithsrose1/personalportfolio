@@ -3,91 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Smita Rosemary's Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Portfolio-Studio</title>
+    <link rel="stylesheet" href="gallery.css">
 </head>
 <body>
+
+    <!-- Tiny screen that pops up to request for audio permission -->
     <div id="audio-permission-screen" class="audio-permission-screen">
         <div class="audio-permission-content">
             <h2>Welcome to Rosemary's Studio</h2>
-            <p>For your viewing pleasure, please enable audio</p>
-            <button id="enable-audio-button">Enable Audio</button>
+            <p>Click Here to Enter and Begin the Experience</p>
+            <button id="enable-audio-button">Enter Gallery</button>
         </div>
     </div>
+
+
+    <!-- The main gallery -->
     <div id="main-gallery" style="display:none;">
-        <header>
-            <div class="logo">
-                <img src="logo.png" alt="Logo">
-            </div>
-            <nav>
-                <ul>
-                    <li class="nav-item"><a href="index.html#Home">Home</a></li>
-                    <li class="nav-item"><a href="index.html#Projects">Projects</a></li>
-                    <li class="nav-item"><a href="index.html#Art" class="active">Art</a></li>
-                    <li class="nav-item"><a href="index.html#Contact">Contact</a></li>
-                </ul>        
-            </nav>
-        </header>
         <section id="ArtGallery">
-            <a href="index.html#Art" class="back-button">← Exit</a>
-            <h1>Rosemary's Studio</h1>
-            <div class="art-gallery">
-                <div class="audio-controls">
-                    <img src="assets/album-art.jpg" alt="Current Track" id="current-track-art">
-                    <button id="play-pause">▶️</button>
-                    <input type="range" id="volume" min="0" max="100" value="50">
-                    <span id="track-name">I Put a Spell on You - Nina Simone</span>
+            <div class="gallery">
+                <div class = "gallery-header">
+                    <a href="index.html#Art" class="back-button">← Exit</a>
+                    <h1 class="gallery-title">The Rose Gallery</h1>
+                    <div class="audio-controls">
+                        <img src="assets/ninacropped.jpeg" alt="Current Track" id="current-track-art">
+                        <div class="audio-info">
+                            <span id="track-name">I Put a Spell on You - Nina Simone</span>
+                            <div class="buttons">
+                                <button id="play-pause">▶️</button>
+                                <input type="range" id="volume" min="0" max="100" value="50">
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="carousel">
-                    <div class="art-item">
-                        <img src="artworks/art1.jpg" alt="Artwork 1">
-                        <div class="art-details">
-                            <h3>Steve and Kira</h3>
-                            <p>My lovely brother and sister-in-law, that I painted for their wedding.
-                                I've never felt more exhilarated painting.
-                                Acrylic on canvas. 
-                                16"x20". 
-                            </p>
-                        </div>
+
+                <div class="spotlight"></div>
+
+                <div class="conveyor-container">
+                    <div class="conveyor-track" id="carousel-track"></div>
+                </div>
+
+                <div class="info-display">
+                    <div class="info-title" id="current-title"></div>
+                    <div class="info-artist" id="current-artist"></div>
+                </div>
+
+                <div class="hint">Click any artwork to explore</div>
+            </div>
+
+            <div class="modal-overlay" id="modal">
+                <button class="modal-close" id="modal-close">×</button>
+                <div class="modal-content">
+                    <div class="modal-image-container">
+                        <img class="modal-image" id="modal-image" src="" alt="">
                     </div>
-                    <div class="art-item">
-                        <img src="artworks/art2.jpg" alt="Artwork 2">
-                        <div class="art-details">
-                            <h3>Elana</h3>
-                            <p>My first commission of my SIL's sister! Worked with such tiny brushes for the details. 
-                                Acrylic, on canvas.
-                                20"x24".
-                            </p>
-                        </div>
-                    </div>
-                    <div class="art-item">
-                        <img src="artworks/art3.jpg" alt="Artwork 3">
-                        <div class="art-details">
-                            <h3>Artwork Title 3</h3>
-                            <p>Description of the artwork...</p>
-                        </div>
-                    </div>
-                    <div class="art-item">
-                        <img src="artworks/art3.jpg" alt="Artwork 3">
-                        <div class="art-details">
-                            <h3>Artwork Title 3</h3>
-                            <p>Description of the artwork...</p>
-                        </div>
-                    </div>
-                    <div class="art-item">
-                        <img src="artworks/art3.jpg" alt="Artwork 3">
-                        <div class="art-details">
-                            <h3>Artwork Title 3</h3>
-                            <p>Description of the artwork...</p>
-                        </div>
+                    <div class="modal-info">
+                        <h2 class="modal-title" id="modal-title"></h2>
+                        <p class="modal-artist" id="modal-artist"></p>
+                        <div class="modal-divider"></div>
+                        <p class="modal-description" id="modal-description"></p>
                     </div>
                 </div>
             </div>
         </section>
     </div>
+
     <audio id="audio-player" loop>
         <source src="assets/gallery-track.mp3" type="audio/mpeg">
     </audio>
+
     <script src="gallery.js"></script>
 </body>
 </html>

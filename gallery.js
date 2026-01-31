@@ -12,16 +12,33 @@ audio.volume = 0.5;
 enableAudioButton.addEventListener('click', () => {
     audio.play();
 
-    permissionScreen.style.display = 'none';
+    permissionScreen.style.opacity = '0';
     permissionScreen.style.transition = 'opacity 0.5s';
 
     setTimeout(() => {
         permissionScreen.style.display = 'none';
-    }, 500);
 
-    mainGallery.style.display = 'block';
+        mainGallery.style.display = 'block';
+        mainGallery.style.opacity = '0';
+        setTimeout(() => {
+            mainGallery.style.transition = 'opacity 1s';
+            mainGallery.style.opacity = '1';
+        }, 50);
+
+    }, 500);
     playPauseButton.textContent = '⏸️';
 });
 
+playPauseButton.addEventListener('click', () => {
+    if (audio.paused) {
+        audio.play();
+        playPauseButton.textContent = '⏸️';
+    } else {
+        audio.pause();
+        playPauseButton.textContent = '▶️';
+    }
+});
 
-
+volumeSlider.addEventListener('input', () => {
+    audio.volume = volumeSlider.value / 100;
+});

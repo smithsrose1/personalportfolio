@@ -1,12 +1,136 @@
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem; /* Adjust this value based on the height of your nav bar */
+}
+
+
+header {
+    position: fixed; /* stays at top */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 2rem;
+    background: rgba(220, 122, 60, 0.6);
+    backdrop-filter: blur(5px);
+
+    z-index: 1000;
+}
+.logo img {
+    height: 36px;
+    width: auto;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+    margin: 75px;
+    padding: 2;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+.nav-item a:hover {
+    color: #0f0e07;
+    transition: color 0.3s ease-in-out;
+}
+
 body {
     font-family: sans-serif;
     text-align: center;
     padding-top: 50px;
+    margin: 0%;
+    width: 100vw;
+    height: 100vh;
+    background-color:#d8895e;
 }
 
-#message {
-    /* Initially hide the message */
-    display: none; 
-    color: green;
-    font-weight: bold;
+.middle-home-section {
+    display: flex; /* Magic starts here */
+    justify-content: center; /* Spacing between boxes */
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem;
+    width: 100vw;
+    max-width: 1200px;
+    margin: 2% auto;
+    flex-wrap: wrap; /* allows stacking */
+    background-color:#f3d6c3;
 }
+.profile-container,
+.intro-text {
+    flex: 1 1 300px; /* grow, shrink, minimum width */
+}
+
+.profile-pic {
+    width: min(500px, 90vw);
+    height:auto;
+    border-radius: 0%;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+}
+
+.intro-text {
+    font-size: clamp(1rem, 2.5vw, 1.1rem);
+    color: #333;
+    text-align: left;
+
+}
+.intro-text h1 {
+    font-size: clamp(2rem, 5vw, 3rem);
+    color: #ec7133
+}
+
+.profile-container,
+.intro-text {
+    flex: 1 1 300px; /* grow, shrink, minimum width */
+}
+.intro-text h1 {
+    font-size: clamp(4rem, 6vw, 5rem);
+}
+.intro-text h2 {
+    font-size: clamp(1.5rem, 3vw, 2rem);
+}
+
+@media (max-width: 600px) {
+    .intro-text {
+        text-align: center;
+    }
+}
+.pronounciation-header {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+.name-things h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.name-things h4 {
+    font-size: 0.95rem;
+    font-style: italic;
+    opacity: 0.8;
+}
+
+.name-things h5 {
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.name-things p {
+    font-size: 0.85rem;
+    margin-top: 0;
+}
+
