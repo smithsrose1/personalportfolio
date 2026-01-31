@@ -9,6 +9,7 @@ body {
     background: #0d0d0d;
     color: #e8e0d5;
     overflow: hidden;
+
 }
 
 #audio-permission-screen {
@@ -202,6 +203,7 @@ body {
     position: absolute;
     left: 0;
     gap: 40px;
+
     will-change: transform;
 }
 
