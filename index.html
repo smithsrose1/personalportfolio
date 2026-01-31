@@ -9,7 +9,7 @@
 <body>
     <header>
         <div class = "logo">
-            <img src="logo.png" alt="Logo">
+            <img src="assets/logo.jpg" id="logo-button" alt="Logo">
         </div>
         <nav>
             <ul>
@@ -31,15 +31,15 @@
                     <h2>Hello World! I'm ...</h2>
                     <h1>Smita Rosemary</h1>
                     <div class="pronounciation-header">
-                        <img src="assets/audio.png" alt="Play Sound" class = "play-sound">
-                
+                        <img src="assets/audio1.jpg" alt="Play Sound" class="audio-pronounce" id= "play-sound">
+                                        
                         <div class="name-things">
                             <h3>Smita (स्मिता)</h3>
                             <h4>/smi-tha/</h4>
                         </div>
                     </div>
                     <h5>1. to smile.</h5>
-                    <p>"one who smiles"</p>
+                    <h6>"one who smiles"</h6>
                     <p>I'm a software developer who is excited about all things data driven and interesting in human centric engineering.
                         With a unique background in Computer Science and Behavioral Neuroscience (and a sprinkle of art), 
                         I bring a technical and creative skillset with an eagerness to learn!</p>
@@ -60,23 +60,28 @@
     <section id="Projects">
         <h2>Check out my projects!</h2>
         <div class="projects-content">
-            <a href="github.com/smita-rosemary" class="project-card">
+            <a href="https://github.com/smithsrose1/FlixRec.git" class="project-card">
                 <img src="assets/project1.png" alt="Project 1">
                 <h3>IdleHands</h3>
                 <p>Helping you get those idle hands moving. Coming Soon...</p>
             </a>
             <a href="github.com/smita-rosemary" class="project-card">
                 <img src="assets/project1.png" alt="Project 2">
-                <h3>Illumen</h3>
-                <p>A convolutional neural network for Alzheimer's detection.</p>
+                <h3>PAWgress</h3>
+                <p>A motivational to-do app that sits on your desktop and keeps you motivated by playing handmade animations! ~Inspired by Luca my lovely kitty.</p>
             </a>
             <a href="github.com/smita-rosemary" class="project-card">
                 <img src="assets/project1.png" alt="Project 3">
+                <h3>Illumen</h3>
+                <p>A convolutional neural network for Alzheimer's detection.</p>
+            </a>
+            <a href="https://github.com/smithsrose1/SpreadsheetPro.git" class="project-card">
+                <img src="assets/project1.png" alt="Project 4">
                 <h3>SpreadSheetPro</h3>
                 <p>A simple spreedsheet with a lot of brain power.</p>
             </a>
-            <a href="github.com/smita-rosemary" class="project-card">
-                <img src="assets/project1.png" alt="Project 4">
+            <a href="https://github.com/smithsrose1/FlixRec.git" class="project-card">
+                <img src="assets/project1.png" alt="Project 5">
                 <h3>FlixRec</h3>
                 <p>Need help finding your next favorite movie? FlixRec has you covered. A model (built and trained by us)
                     to recommend movies based on streaming services, sentiment analysis, and your letterboxd account.</p>
@@ -85,14 +90,14 @@
     </section>
     <section id="Art">
         <h2>A tour of my art gallery.</h2>
-        <a href="art-gallery.html" class="tour-button">Take the Tour</a>
+        <a href="art-gallery.html" class="tour-button" id="play-tour-audio">Take the Tour</a>
     </section>
     <section id="Contact">
         <div class="contact-content">
             <h2>More about me</h2>
-            <p>On my free time I love to stroll around the city, exploring new cafes and parks while listening to really (really) old music- 
+            <p>In my free time I love to stroll around the city, exploring new cafes and parks while listening to really (really) old music- 
                 think Frank Sinatra, Chet Baker, and Ella Fitzgerald. Yeah my listening age on Spotify was 88. 
-                But anyways, in my free time I love building up cozy apps, painting (as seen above), and in general loving life.
+                But anyways, I love solving complex problems through code, building cozy apps with my free time, painting (as seen above), and in general loving life.
                 Let's connect if any of these appeal to you (oh and if you love cats!).
                 All icons, and artwork seen on this site are created by me. </p>
         </div>
@@ -106,8 +111,14 @@
             <a href="https://instagram.com/smita-rosemary" target="_blank">
                 <img src="assets/instagram.png" alt="Instagram" class="social-icon">
             </a>
+            <a href="https://instagram.com/smita-rosemary" target="_blank">
+                <img src="assets/instagram.png" alt="Instagram" class="social-icon">
+            </a>
         </div>
     </section>  
+    <audio id="pronounce-player" loop>
+        <source src="assets/portfolio-track.mp3" type="audio/mpeg">
+    </audio>
 
     <!-- Link your JavaScript file here -->
     <script src="script.js"></script>

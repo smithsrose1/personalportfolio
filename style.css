@@ -37,7 +37,7 @@ header {
 }
 
 .logo img {
-    height: 40px;
+    height: 60px;
     width: auto;
     transition: transform 0.3s ease;
 }
@@ -83,7 +83,7 @@ section h2 {
     font-size: clamp(2rem, 5vw, 3rem);
     color: #ec7133;
     margin-bottom: 2rem;
-    text-align: center;
+    text-align: left;
     letter-spacing: 1px;
 }
 
@@ -147,6 +147,7 @@ section h2 {
     color: #ec7133;
     margin-bottom: 1rem;
     font-weight: 700;
+    align-items: left;
 }
 
 .pronounciation-header {
@@ -160,14 +161,14 @@ section h2 {
     border-left: 4px solid #d4a954;
 }
 
-.play-sound {
-    width: 30px;
-    height: 30px;
+.audio-pronounce {
+    width: 50px;
+    height: 50px;
     cursor: pointer;
     transition: transform 0.3s ease;
 }
 
-.play-sound:hover {
+.audio-pronounce:hover {
     transform: scale(1.1);
 }
 
@@ -179,7 +180,7 @@ section h2 {
 }
 
 .name-things h4 {
-    font-size: 1rem;
+    font-size: .85rem;
     font-style: italic;
     opacity: 0.7;
 }
@@ -189,6 +190,13 @@ section h2 {
     font-weight: 500;
     margin: 1rem 0 0.5rem 0;
     color: #d4a954;
+}
+.intro-text h6 {
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 1rem 0 0.5rem 0;
+    font-style:italic;
+    color: #7e746b;
 }
 
 .intro-text p {
@@ -364,7 +372,7 @@ section h2 {
     background: linear-gradient(135deg, #fef5e7 0%, #f3d6c3 100%);
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: right;
     justify-content: center;
     gap: 4rem;
 }
@@ -372,11 +380,11 @@ section h2 {
 .contact-content {
     flex: 1;
     max-width: 600px;
-    text-align: left;
+    text-align: center;
 }
 
 .contact-content h2 {
-    text-align: left;
+    text-align: center;
     margin-bottom: 1.5rem;
 }
 

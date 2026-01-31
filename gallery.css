@@ -17,7 +17,7 @@ body {
 #audio-permission-screen {
     position: fixed;
     inset: 0;
-    background: linear-gradient(135deg, #f8b122 0%, #df5a13 20%, #461d06 70%, #110e12 90%);
+    background: linear-gradient(135deg, #de8758 0%, #e77132 20%, #461d06 70%, #110e12 90%);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -43,8 +43,8 @@ body {
 .audio-permission-content h2 {
     font-size: clamp(3rem, 6vw, 5rem);
     text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-    font-weight: 300;
-    letter-spacing: 0.05em;
+    font-weight: 400;
+    letter-spacing: 0.15em;
     margin: 0;
 }
 
@@ -60,13 +60,13 @@ body {
     margin-top: 1.5rem;
     padding: 16px 42px;
     font-size: 1rem;
-    background: white;
-    color: #1c0634; /* ties into gradient */
+    background: rgb(33, 19, 19);
+    color: #f4f2f6; /* ties into gradient */
     border: none;
     border-radius: 999px;
     cursor: pointer;
-    font-weight: 600;
-    letter-spacing: 0.05em;
+    font-weight: 400;
+    letter-spacing: 0.15em;
 
     transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
@@ -201,7 +201,7 @@ body {
     width: 500px;
     height: 500px;
     background: radial-gradient(
-        circle 350px at center, 
+        circle 400px at center, 
         rgba(212, 169, 84, 0.25) 0%, 
         rgba(212, 169, 84, 0.08) 40%, 
         transparent 70%
@@ -554,7 +554,7 @@ body {
         position: absolute;
         top: 0.75rem;
         left: 0.75rem;
-        font-size: 0.9rem;
+        font-size: 0.5rem;
     }
     
     .gallery-title {
