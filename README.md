@@ -5,7 +5,8 @@ By Smita Rosemary
 ### Coded with JavaScript, HTML, and CSS only!
 
 ```
-I have both my coding, and art projects in this site as a heads up. Grab your headphones and take a tour though my immersive gallery. 
+I have both my coding, and art projects in this site as a heads up. 
+Grab your headphones and take a tour though my immersive gallery. 
 
 ```
 
